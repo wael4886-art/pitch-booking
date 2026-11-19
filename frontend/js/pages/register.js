@@ -1,0 +1,3 @@
+const root=document.getElementById("page-content");
+root.innerHTML=`<form class="card form-card" id="register-form"><h2>إنشاء حساب</h2><label>الاسم</label><input required><label>البريد الإلكتروني</label><input type="email" required><label>رقم الهاتف</label><input type="tel" required><label>نوع الحساب</label><select><option>مستخدم</option><option>صاحب ملعب</option></select><label>كلمة المرور</label><input type="password" required><button class="btn">إنشاء حساب</button><p class="notice">لو اخترت صاحب ملعب، رفع المستندات والموافقة يتم تمثيلهما تجريبياً.</p></form>`;
+document.getElementById("register-form").addEventListener("submit",e=>{e.preventDefault();App.showToast("تم إنشاء الحساب بشكل تجريبي");});

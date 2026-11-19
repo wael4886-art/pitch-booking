@@ -1,0 +1,2 @@
+const root=document.getElementById("page-content");
+root.innerHTML=`<div class="grid"><div class="card"><h3>حالة الواجهة</h3><p class="stat-number">Online</p></div><div class="card"><h3>آخر تحديث</h3><p>الآن — محاكاة</p></div></div><div class="card" style="margin-top:16px"><h2>سجل الأخطاء التجريبي</h2><p>لا توجد أخطاء مسجلة.</p><button class="btn" onclick="App.showToast('النسخ الاحتياطي غير متاح في Front-End')">نسخ احتياطي</button></div>`;

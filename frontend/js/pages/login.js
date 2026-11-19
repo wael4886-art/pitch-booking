@@ -1,0 +1,3 @@
+const root=document.getElementById("page-content");
+root.innerHTML=`<form class="card form-card" id="login-form"><h2>تسجيل الدخول</h2><label>البريد الإلكتروني</label><input type="email" required placeholder="name@example.com"><label>كلمة المرور</label><input type="password" required placeholder="كلمة المرور"><button class="btn">دخول</button><p>ما عندكش حساب؟ <a href="register.html">إنشاء حساب</a></p><div class="notice">التسجيل والدخول تجريبيان، بدون حساب حقيقي.</div></form>`;
+document.getElementById("login-form").addEventListener("submit",e=>{e.preventDefault();App.showToast("تم التحقق تجريبياً — اختر الدور للتجربة");});
